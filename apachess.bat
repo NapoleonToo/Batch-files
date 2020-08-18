@@ -1,3 +1,5 @@
+::the script starts and stops Apache and MySQL server depending on user's choice
+
 ::HIDE ALL COMMANDS
 @ECHO OFF
 ::Change the title displayed above the CMD window
@@ -27,7 +29,7 @@ ECHO:
 	IF %num%==[] ECHO Value Missing
 	IF %num% EQU 1 cls & GOTO START
 	IF %num% EQU 2 cls & GOTO STOPA
-	IF %num% EQU 3 cls & GOTO
+	IF %num% EQU 3 EXIT
 
 
 	:START
